@@ -1,0 +1,28 @@
+PRO1
+write a source code for   STATIC MEMBER DATA AND STATIC MEMBER FUNCTION
+
+
+PRO2
+debug the errors in the following program 
+Fibonacci using Recursive
+import java.util.Scanner;
+public class FibonacciRecursive {
+    public static int fibonacci(int n) {
+        // Base cases: return n if n is 0 or 1.
+        if (n <= 1) {
+            return n;
+        }
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);series.
+        System.out.print("Enter the number of terms: ");
+        int n = scanner.next();
+        System.out.println("Fibonacci series up to " + n + " terms:");
+        for (int i = 0; i < n; i++) {
+            System.out.print(fibonacci(i) + " ");
+        }
+        scanner.close();
+    }
+}

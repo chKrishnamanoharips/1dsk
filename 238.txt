@@ -1,0 +1,45 @@
+PRO1
+write a source code for FINAL METHODS
+
+
+
+
+
+PRO2
+debug the errors in the following program
+IMPLEMENT ABSTRCT CLASS
+
+abstract class Animal {
+   
+    abstract void sound();
+    
+   
+    void eat() {
+        System.out.println("This animal is eating.");
+    }
+}
+class Dog extends Animal {
+    
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+class Cat extends Animal {
+    
+    void sound() {
+        System.out.println("Cat meows");
+    }
+}
+
+public class AbstractClassExample {
+    public static void main(String[] args) {
+      cannot be instantiated
+        Animal dog = new Dog();
+        dog.sound();  
+        dog.eat();    
+
+        Animal cat = new Cat();
+        cat.sound();  
+        cat.eat();  
+    }
+}

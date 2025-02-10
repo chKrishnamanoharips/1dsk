@@ -1,0 +1,25 @@
+PRO1
+write a source code for  CONSTRUCTOR WITH ARGUMENTS AND WITH OUT ARGUMENTS
+
+PRO2
+debug the errors in the following program 
+SumNatural using Recursive
+
+import java.util.Scanner;
+public class SumNaturalRecursive {numbers.
+    public static int sumNatural(int n) {
+        if (n <= 1) {
+            return n;
+        }
+        return n + sumNatural(n - 1);
+    }
+
+    public static void main(String[] ) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the value of n: ");
+        int n = scanner.nextInt();
+        int sum = sumNatural(n);
+        System.out.println("The sum of the first " + n + " natural numbers is: " + sum);
+        scanner.close();
+    }
+}

@@ -1,0 +1,90 @@
+pro1
+// Step 1: Create a class that implements the Runnable interface
+class MyRunnable implements Runnable {
+    @Override
+    public void run() {
+        // This method will contain the code that will be executed by the thread
+        for (int i = 0; i < 5; i++) {
+            // Printing the thread ID and a value to show the thread's output
+            System.out.println(Thread.currentThread().getId() + " Value: " + i);
+            try {
+                // Simulate some work by making the thread sleep for 500ms
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                System.out.println(e);
+            }
+        }
+    }
+}
+
+public class RunnableExample {
+    public static void main(String[] args) {
+        // Step 2: Create an instance of the class that implements Runnable
+        MyRunnable myRunnable = new MyRunnable();
+        
+        // Step 3: Create multiple Thread objects and pass the Runnable instance to them
+        Thread thread1 = new Thread(myRunnable);
+        Thread thread2 = new Thread(myRunnable);
+        
+        // Step 4: Start the threads
+        thread1.start();
+        thread2.start();
+    }
+}
+
+pro2
+// Parent class
+class Animal {
+    String name;
+
+    // Constructor
+    Animal(String name) {
+        this.name = name;
+        System.out.println("Animal constructor called");
+    }
+
+    // Method in the parent class
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+// Child class
+class Dog extends Animal {
+    int age;
+
+    // Constructor in the child class
+    Dog(String name, int age) {
+        // Calling the constructor of the parent class using super
+        super(name);
+        this.age = age;
+        System.out.println("Dog constructor called");
+    }
+
+    // Overriding the sound() method of the parent class
+ 
+    void sound() {
+        // Calling the parent class method using super
+        super.sound();  // Calls the sound() method from Animal class
+        System.out.println("Dog barks");
+    }
+
+    void displayInfo() {
+        // Accessing the parent class field using super
+        System.out.println("Name: " + super.name + ", Age: " + this.age);
+    }
+}
+
+public class SuperKeywordExample {
+    public static void main(String[] args) {
+        // Creating an object of the Dog class
+        Dog dog = new Dog("Buddy", 3);
+
+        // Calling the overridden method
+     
+
+        // Displaying the dog info using super to access parent class field
+        dog.displayInfo();
+    }
+}
+debug the prog=2

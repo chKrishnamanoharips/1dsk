@@ -1,0 +1,39 @@
+PRO1
+write a source code for StringBuffer functions
+
+PRO2
+debug the errors in the following program 
+CONSTRUCTOR OVERLOADING
+
+class Rectangle {
+    int length;
+    int width;
+    public Rectangle() {
+        length = 0;
+        width = 0;
+        System.out.println("Default constructor called: Length = " + length + ", Width = " + width);
+    }
+    public Rectangle(int side) {
+        length = side;
+        width = side;
+        System.out.println("Constructor with one parameter called: Length = " + length + ", Width = " + width);
+    }
+    public Rectangle(int length, int width) {
+        this.length = length;
+        this.width = width;
+        System.out.println("Constructor with two parameters called: Length = " + length + ", Width = " + width);
+    }
+    public int area() {
+        return length * width;
+    }
+}
+
+public class ConstructorOverloadingExample {
+    public static void main(String[] args) {       
+        Rectangle rect1 = new rectangle();       
+        Rectangle rect2 = new Rectangle(5);
+        Rectangle rect3 = new Rectangle(10, 20);
+        System.out.println("Area of rect2 (square): " + rect2.area());
+        System.out.println("Area of rect3 (rectangle): " + rect3.area());
+    }
+}

@@ -1,0 +1,46 @@
+PRO1
+write a source code for     MULTI LEVEL INHERITANCE
+
+
+PRO2
+debug the errors in the following program 
+SumOfPrimes
+
+
+
+import java.util.Scanner;
+public class SumOfPrimes {
+    public static boolean isPrime(int num) {
+        if (num <= 1) {
+            return false;  
+        }
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                return false;  
+            }
+        }
+        return true; 
+    }
+    public static int sumOfPrimes(int n) {
+        int count = 0;
+        int sum = 0;
+        int num = 2;  // Start checking from 2, the first prime number
+
+        while (count < n) {
+            if (isPrime(num)) {
+                sum += num;  
+            num++; 
+        }
+
+        return sum; 
+    }
+
+    public static void main(String[] ) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of prime numbers to sum: ");
+        int n = scanner.nextInt();
+        int result = sumofPrimes(n);
+        System.out.println("The sum of the first " + n + " prime numbers is: " + result);
+        scanner.close();
+    }
+}

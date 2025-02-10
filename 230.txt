@@ -1,0 +1,22 @@
+PRO1
+write a source code for    EMPLOYEE CLASS WITH CONSTRUCTOR
+
+
+
+
+
+PRO2
+debug the errors in the following program
+CONVERT STRING TO UPPERCASE AND LOWERCASE
+
+
+
+public class StringToUpperCase {
+    public static void main(String[] args) {       
+        String str = "Hello, World!";    
+        String upperStr = str.touppercase();
+         System.out.println("Original String: " str);
+        System.out.prntln("Uppercase String: " + upperStr);
+    }
+}
+

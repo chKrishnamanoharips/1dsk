@@ -1,0 +1,50 @@
+PRO1
+write a source code for class and object
+
+PRO2
+debug the errors in the following program 
+POLYMORPHISM IN JAVA
+
+class Animal {
+   
+    public void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+class Dog extends Animal {
+    
+    public void sound() {
+        System.out.println("Dog barks");
+    }
+}
+class Cat extends Animal {
+  
+    public void sound() {
+        System.out.println("Cat meows");
+    }
+}
+class MathOperation {
+    public int add(int a, int b) {
+        return a + b;
+    }
+    
+    public int add(int a, int b, int c) {
+        return a + b + c;
+    }
+}
+
+public class PolymorphismExample {
+    public static void main(String[] args) {
+         Animal myAnimal = new Animal();
+        Animal myDog = new Dog(); 
+        Animal myCat = new Cat();  
+        System.out.println("Polymorphism (Method Overriding):");
+        myAnimal.sound();  
+        mydog.sound();    
+        myCat.sound();  
+        MathOperation math = new MathOperation();        
+        System.out.println("\nPolymorphism (Method Overloading):");
+        System.out.println("Sum of 2 numbers: " + math.add(10, 20));     
+        System.out.println("Sum of 3 numbers: " + math.add(10, 20, 30));    
+    }
+}

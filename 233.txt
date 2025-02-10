@@ -1,0 +1,23 @@
+PRO1
+write a source code for PARENT AND CHILD WITH AND WITHOUT PARAMITERISED CONSTRUCTOR
+
+
+
+
+
+
+PRO2
+debug the errors in the following program
+
+REMOVE WHITE SPACES FROM A STRING of right side
+
+
+public class RemoveTrailingSpace {
+    public static void main(String args) {
+        String originalString = "Hello World    ";
+        String trimmedString = originalString();
+
+        System.out.println("Original String: \"" + originalString + "\"");
+        System.out.println("String after trimming spaces: \"" + trimmedString + "\"");
+    }
+}

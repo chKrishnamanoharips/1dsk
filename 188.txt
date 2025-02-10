@@ -1,0 +1,20 @@
+PRO1
+write a source code for find the max of array
+
+PRO2
+debug the errors in the following program 
+SumOfOddNumbers
+
+import java.util.Scanner;
+public class SumOfOddNumbers {
+    public static void main(String[] args) {              
+        System.out.print("Enter the number of odd numbers to sum: ");
+        int n = scanner.nextInt();
+        int sum = 0;
+        for (int i = 1; i <= n; i++) {         
+            sum += 2 * i +1;
+        }
+        System.out.println("The sum of the first " + n + " odd numbers is: " + sum);
+        scanner.close();
+    }
+}

@@ -1,0 +1,21 @@
+PRO1
+write a source code for find the element of an array
+
+PRO2
+debug the errors in the following program 
+LeapYear 
+
+import java.util.Scanner;
+public class LeapYear {
+    public static void main(String[] args) {
+               Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a year: ");
+        int year = scanner.nextInt();
+        if ((year % 6 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+            System.out.println(year + " is a leap year.");
+        } else {
+            System.out.println(year + " is not a leap year.");
+        }
+        scanner.close();
+    }
+}

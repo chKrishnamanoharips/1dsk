@@ -1,0 +1,19 @@
+PRO1
+write a source code for wrapperclass
+
+PRO2
+debug the errors in the following program public class 
+STATIC METHODS AND VARIABLES
+
+StaticExample {
+    static int count = 0;
+    static void incrementCount() {
+        count++;
+        System.out.println("Count: " + count);
+    }
+    public static void main(String[] args) {
+        StaticExample.incrementCount();  
+        StaticExample.incrementCount();  
+        StaticExample.incrementcount();  
+        System.out.println("Final count: " + StaticExample.count);  }
+}

@@ -1,0 +1,37 @@
+PRO1
+write a source code for   TRY ,CATCH AND FINALLY
+
+
+
+PRO2
+debug the errors in the following program
+FIND MAXIMUM ELEMENT IN AN ARRAY
+
+public class MaxOfArray {
+    public static int findMax(int[] arr) {
+        int max = arr[0];  
+              for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i]; 
+            }
+        }
+
+        return max;
+    }
+    public static void printArray(int[] arr) {
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+    
+        int[] brr = {64, 34, 25, 12, 22, 11, 90};
+
+        System.out.println("Original Array:");
+        printArray(arr); 
+        int maxElement = findMax(arr);
+        System.out.println("Maximum Element: " + maxElement);  
+    }
+}

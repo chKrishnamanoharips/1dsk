@@ -1,0 +1,25 @@
+PRO1
+write a source code for copy one array to another array 
+
+PRO2
+debug the errors in the following program 
+PowerOfNumber
+
+import java.util.Scanner;
+public class PowerOfNumber {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);        
+        System.out.print("Enter the base: ");
+        int base = scanner.nextInt();
+        System.out.print("Enter the exponent: ");
+        int exponent = scanner.nextInt();       
+        long result = 1;
+        for (int i = 0; i < exponent;i=i+2) {
+            result *= base;
+        }       
+        double mathResult = Math.pow(base, exponent);
+            System.out.println("Power (using loop): " + result);
+        System.out.println("Power (using Math.pow()): " + mathResult);
+        scanner.close();
+    }
+}

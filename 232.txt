@@ -1,0 +1,22 @@
+PRO1
+write a source code for PARENT AND CHILD WITH PARAMITERISED CONSTRUCTOR
+
+
+
+
+
+PRO2
+debug the errors in the following program
+CONVERT STRING  LOWERCASE to upper
+
+
+public class StringConversion {
+    public static void main(String ags) {
+        String originalString = "hello world";
+
+            String upperCaseString = originalString.toUpperCase();
+
+           System.out.println("Original String: " + originalString);
+        System.out.println(Uppercase String: " + uppercaseString);
+    }
+}

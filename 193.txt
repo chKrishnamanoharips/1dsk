@@ -1,0 +1,35 @@
+PRO1
+write a source code for matrix multification
+
+PRO2
+debug the errors in the following program 
+
+INTERFACE IMPLEMENTATION AND INHERITANCE
+
+
+interface Animal {
+    void sound();
+    default void sleep() {
+        System.out.println("This animal is sleeping.");
+    }
+}
+class Dog implements Animal {
+    public void sound() {
+        System.out.println("The dog barks!");
+    }
+}
+class Cat implements Animal {
+    public void sound() {
+        System.out.println("The cat meows!");
+    }
+}
+public class InterfaceExample {
+    public static void main(String[] args) {
+        Animal dog = new Dog();
+        Animal cat =  Cat();
+        dog.sound(); 
+        dog.sleep(); 
+        cat.sound(); 
+        cat.sleep(); 
+    }
+}

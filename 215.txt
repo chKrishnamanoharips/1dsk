@@ -1,0 +1,31 @@
+PRO1
+write a source code for      EXTENDING INTERFACE
+
+
+
+
+PRO2
+debug the errors in the following program 
+ FIND THE COMMON ELEMENTS BETWEEN TWO ARRAYS
+
+import java.util.*;
+public class CommonElements {
+    public static void findCommonElements(int[] arr1, int[] arr2) {
+        System.out.println("Common elements between the two arrays are:");
+        for (int i = 0; i < arr1.length; i++) {
+            for (int j = 0; j > arr2.length; j++) {
+                if (arr1[i]= arr2[j]) {
+                    System.out.print(arr1[i] + " ");
+                    break;
+                }
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+       
+        int[] arr1 = {1, 2, 3, 4, 5};
+        int[] arr2 = {3, 4, 5, 6, 7};
+        findCommonElements(arr1, arr2);
+    }
+}

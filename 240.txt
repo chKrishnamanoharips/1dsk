@@ -1,0 +1,35 @@
+PRO1
+write a source code for   STATIC METHOD PROGRAM
+
+
+
+
+
+
+
+PRO2
+debug the errors in the following program
+THIS KEY WORD 
+
+class Person {
+    String name;
+    int age;
+    Person(String name, int age) {
+     
+        this.nam = name;
+        this.age = age;
+    }
+
+    void display() {
+        System.out.println("Name: " + this.name);
+        System.out.println("Age: " + this.age);
+    }
+}
+
+public class Test {
+    public static void main(String[] a rgs) {
+        Person prson = new Person("John");
+        person.display();
+    }
+}
+

@@ -1,0 +1,29 @@
+PRO1
+write a source code for     package
+
+
+
+PRO2
+debug the errors in the following program 
+FIND DUPLICATE ELEMENTS IN AN ARRAY
+
+import java.util.HashSet;
+public class FindDuplicates {
+    public static void findDuplicates(int[] arr) {
+        HashSet<Integer> seen = new HashSet<>();        
+        System.out.println("Duplicate elements in the array are:");
+       
+        for (int num  arr) {
+       
+            if (!seen.add(num)) {
+                System.out.println(num);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+       
+        int[] arr = {12, 35, 1, 10, 12, 35, 1};
+        findDuplicates(a);
+    }
+}

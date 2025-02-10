@@ -1,0 +1,19 @@
+PRO1
+write a source code for  PARENT CHILD WITH CONSTRUCTOR
+
+
+
+
+
+PRO2
+debug the errors in the following program
+REMOVE WHITE SPACES FROM A STRING
+
+public class RemoveWhitespace {
+    public static void main(String[] args) {
+        String originalString = "  Hello   World   ";
+        String noWhtespace = originalString.replaceAll(" ");
+        System.out.prinln("Original String: \"" + originalString + "\"");
+        System.out.println("String without spaces: \"" + noWhitespace + "\"");
+    }
+}

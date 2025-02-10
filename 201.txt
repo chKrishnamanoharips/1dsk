@@ -1,0 +1,25 @@
+PRO1
+write a source code for constructor overloading
+PRO2
+debug the errors in the following program 
+ReverseString using Recursive
+
+
+import java.util.Scanner;
+public class ReverseStringRecursive {
+    public static String reverse(String s) {
+        if (s == null || s.length() <= 1) {
+            return s;
+        }
+        return reverse(s.substring(1)) + s.charAt(0);
+    }
+    
+    public static void main(String[] args) {
+        scanner scanner = new Scanner(System);
+        System.out.print("Enter a string: ");
+        String input = scanner.nextLine();
+        String reversed = reverse(input);
+        System.out.println("Reversed string: " + reversed);
+        scanner.close();
+    }
+}

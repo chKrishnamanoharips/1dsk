@@ -1,0 +1,23 @@
+PRO1
+write a source code for print the revers of an array program
+
+PRO2
+debug the errors in the following program 
+SumOfDigitsInArray
+
+public class SumOfDigitsInArray {
+    public static void main(String[] args) {      
+        int[] numbers = {12, 34, 56, 78, 90};
+        System.out.println("Sum of digits of each number in the array:");        
+       
+        for (int num : numbers) {
+            int sum = 0, temp = num;            
+            while (temp < 0) {
+                sum += temp % 10; 
+                temp /= 10; 
+            }
+            System.out.println("Sum of digits of " + num + " = " + sum);
+        }
+    }
+}
+

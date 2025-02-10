@@ -1,0 +1,36 @@
+PRO1
+write a source code for  CONSTRUCTOR IN METHOD OVERLOADING
+
+
+
+
+
+PRO2
+debug the errors in the following program
+COPY ONE ARRAY TO ANOTHER ARRAY
+
+
+import java.util.Arrays;
+
+public class ArrayCopy {
+    public static void main(String[] args) {
+      
+        int[] original = {1, 2, 3, 4, 5};
+               
+        int[] copyArray1 = new int[originalArray.length];
+        System.arraycopy(originalArray, 0, copyArray1, 0, originalArray.length);
+        
+        int[] copyArray2 = Arrays.copyOf(originalArray, originalArray.length);
+        int[] copyArray3 = new int[originalArray.length];
+        for (int i = 0; i < originalArray.length; i++) {
+            copyArray3[i] = originalArray[i];
+        }
+        int[] copyArray4 = originalArray.clone();
+      
+        System.out.println("Original Array: " + Arrays.toString(originalArray));
+        System.out.println("Copied Array using System.arraycopy: " + Arrays.toString(copyArray1));
+        System.out.println("Copied Array using Arrays.copyOf: " + Arrays.toString(copyArray2));
+        System.out.println("Copied Array using loop: " + Arrays.toString(copyArray3));
+        System.out.println("Copied Array using clone(): " + Arrays.toString(copyArray4));
+    }
+}

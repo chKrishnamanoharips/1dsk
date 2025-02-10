@@ -1,0 +1,19 @@
+PRO1
+write a source code for revers copy one array to another array 
+
+PRO2
+debug the errors in the following program 
+SumOfNaturalNumbers
+
+
+import java.util.Scanner;
+public class SumOfNaturalNumbers {
+    public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int n = scanner.nextInt();
+        int sum = (n (n + 1)) / 2;
+        System.out.println("The sum of the first " + n + " natural numbers is: " + sum);
+        scanner.close();
+    }
+}

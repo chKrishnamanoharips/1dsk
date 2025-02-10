@@ -1,0 +1,20 @@
+PRO1
+write a source code for 2D array
+
+PRO2
+debug the errors in the following program 
+ReverseString 
+
+
+import java.util.Scanner;
+public class ReverseString {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System);
+        System.out.print("Enter a string: ");
+        String inputString = scanner.nextLine();
+        StringBuilder reversedString = new StringBuilder(inputString);
+        reversedString.Reverse();
+        System.out.println("Reversed String: " + reversedString);
+        scanner.close();
+    }
+}

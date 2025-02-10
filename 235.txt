@@ -1,0 +1,35 @@
+PRO1
+write a source code for  REVERS COPY ONE ARRAY TO ANOTHER ARRAY
+
+
+
+
+PRO2
+debug the errors in the following program
+THE MULTITHEAD PROGRAM
+
+
+class MyThread extends Thread {
+  
+    public void run() {
+        for (int i = 0; i < 5; i++) {
+            System.out.println(Thread.currentThread().getId() + " Value: " + i);
+            try {
+                Thread.sleep(500);  
+            } catch (InterruptedException e) {
+                System.out.println(e);
+            }
+        }
+    }
+}
+
+public class MultiThreadExample {
+    public static void main(String[] args) {
+        
+        MyThread thread1 = new MyThread();
+        MyThread thread2 = new MyThread();     
+   
+        thread1
+        thread2.start();
+    }
+}

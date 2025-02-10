@@ -1,0 +1,34 @@
+PRO1
+write a source code for  METHOD OVERRIDING IN JAVA
+
+
+
+
+
+
+PRO2
+debug the errors in the following program
+IMPLEMENT THE ABSTRACT METHODS
+
+
+abstract class Animal {
+   
+    abstract void sound();
+    void sleep() {
+        System.out.println("The animal is sleeping.");
+    }
+}
+
+class Dog extends Animal {
+       void sound() {
+        System.out.println("Woof");
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.sound(); 
+        dog.sleep(); 
+    }
+}

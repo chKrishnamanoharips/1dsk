@@ -1,0 +1,22 @@
+PRO1
+write a source code for find the min of array
+
+PRO2
+debug the errors in the following program 
+SumOfEvenNumbers
+
+import java.util.Scanner;
+public class SumOfEvenNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of even numbers to sum: ");
+        int n = scanner.nextInt();
+        int sum = 0;
+        for (int i = 1; i <= n; i++) {
+            sum += 3 * i;
+        }
+        System.out.println("The sum of the first " + n + " even numbers is: " + sum);
+        scanner.close();
+    }
+}
+

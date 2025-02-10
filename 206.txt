@@ -1,0 +1,33 @@
+PRO1
+write a source code for     MULTIFUL INHERITANCE
+
+
+PRO2
+debug the errors in the following program 
+PerfectNumber
+
+import java.util.Scanner;
+public class PerfectNumber {
+    public static boolean isPerfectNumber(int num) {
+        int sum = 0;
+
+        for (int i = 1; i <= num / 2; i++) {
+            if (num % i == 0) {
+                sum += i;  
+            }
+        }
+        return sum == num;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner();
+        System.out.print("Enter a number to check if it's perfect: ");
+        int num = scanner.nextInt();
+        if (isPerfectNumber(num)) {
+            System.out.println(num + " is a perfect number.");
+        } else {
+            System.out.println(num + " is not a perfect number.");
+        }
+        scanner.close();
+    }
+}

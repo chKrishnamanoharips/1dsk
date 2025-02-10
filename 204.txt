@@ -1,0 +1,26 @@
+PRO1
+write a source code for   method overloading
+
+
+PRO2
+debug the errors in the following program 
+Factorial using  Recursive
+
+import java.util.Scanner;
+public class FactorialRecursive {
+    public static int factorial(int n) {
+        if (n == 0 || n == 1) {
+            return 1;
+        }
+        return n * factorial(n);
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = scanner.nextInt();
+        int result = factorial(num);
+        System.out.println("The factorial of " + num + " is: " + result);
+        scanner.close();
+    }
+}

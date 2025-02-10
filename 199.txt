@@ -1,0 +1,34 @@
+PRO1
+write a source code for constructor with arguments 
+
+PRO2
+debug the errors in the following program 
+CREATE A SIMPLE CLASS WITH CONSTRUCTOR AND METHODS
+
+class Example {
+ 
+    int number;
+    String ext;
+    public Example() {
+             number = 0;
+        text = "Default";
+        System.out.println("Default constructor called.");
+    }
+    public Example(int number, String text) {    
+        this.number = number;
+        this.text = text;
+        System.out.println("Parameterized constructor called.");
+    }
+    public void display() {
+        System.out.println("Number: " + number + ", Text: " + text);
+    }
+}
+
+public class ConstructorProgram {
+    public static void main(String[] args) {
+        Example obj1 = new Example();
+        obj1.display();  
+        Example obj2 = new Example(100, "Hello World");
+        obj2.display(); 
+    
+}

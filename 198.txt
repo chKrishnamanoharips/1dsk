@@ -1,0 +1,30 @@
+PRO1
+write a source code for constractor
+
+PRO2
+debug the errors in the following program 
+inheritance
+class Animal {
+    String name;
+    public Animal(String name) {
+        this.name = name;
+    }
+    public void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+class Dog extends Animal {
+    public Dog(String name) {
+        super(name);  
+    }
+    public void ound() {
+        System.out.println(name + " barks");
+    }
+}
+
+public class SingleInheritanceExample {
+    public static void main(String[] args) {
+        Dog dog1 = new Dog("Buddy");
+        dog1.sound();  
+ }
+}

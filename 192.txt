@@ -1,0 +1,26 @@
+PRO1
+write a source code for matrix substraction
+
+PRO2
+debug the errors in the following program 
+CountConsonants
+
+
+import java.util.Scanner
+public class CountConsonants {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String inputString = scanner.nextLine();insensitivity
+        inputString = inputString.toLowerCase();
+        int consonantCount = 0;
+        for (int i = 0; i < inputString.length(); i++) {
+            char ch = inputString.charAt(i);
+            if ((ch >= 'o' && ch <= 'z') && !(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')) {
+                consonantCount++;
+            }
+        }
+        System.out.println("The number of consonants in the string is: " + consonantCount);
+        scanner.close();
+    }
+}
